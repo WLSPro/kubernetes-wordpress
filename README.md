@@ -23,4 +23,8 @@ The aim of this project is to create a deployable kubernetes cluster of 2 contai
 `kubectl apply -f wordpress-service.yaml`
 
 ### get external IP address
-kubectl get svc
+`kubectl get svc`
+
+### Watch Progress 
+`kubectl get pod -l app=mariadb --watch`
+`kubectl get pod -l app=wordpress --watch`
